@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Management System</h1>
+    <form id="studentForm">
+      <input type="hidden" id="studentId" />
+      <label for="register_number">Register Number:</label>
+      <input type="text" id="register_number" name="register_number" required />
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="dept">Department:</label>
+      <input type="text" id="dept" name="dept" required />
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Auction Person List</h2>
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Register Number</th>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Phone</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

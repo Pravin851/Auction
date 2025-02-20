@@ -1,0 +1,154 @@
+/* General Reset and Body Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #351e1e;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header Styles */
+.auction-header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auction-header h1 {
+  font-size: 36px;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons a {
+  color: white;
+  background-color: #007bff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.auth-buttons a:hover {
+  background-color: #0056b3;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-message {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.welcome-message h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.auction-info {
+  margin-top: 40px;
+}
+
+.auction-info h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.auction-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.auction-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.auction-card:hover {
+  transform: translateY(-10px);
+}
+
+.auction-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.auction-card h3 {
+  font-size: 22px;
+  color: #333;
+  margin: 15px 0;
+}
+
+.auction-card p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .auction-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .auction-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .auction-header h1 {
+    font-size: 28px;
+  }
+
+  .auth-buttons a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

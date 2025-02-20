@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auction - Place Bid</title>
+  <link rel="stylesheet" href="styleshome.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="logo">Auction Home</div>
+    <nav>
+      <ul>
+        <li><a href="/home">Auction</a></li>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/auction" class="logout-button">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <section class="home-container">
+    <div class="welcome-message">
+      <h1>Place Your Bid</h1>
+      <p>Enter your bid details below:</p>
+    </div>
+
+    <div class="auction-info">
+      <h2>Current Auctions</h2>
+      <div class="auction-cards">
+        <div class="auction-card">
+          <img src="/1.jpg" alt="Auction Item 1">
+          <h3>Auction Item 1</h3>
+          <p>Starting Price: $50</p>
+          <!-- Form to place a bid -->
+          <form id="bidForm" action="/place-bid" method="POST">
+            <label for="item">Item:</label>
+            <input type="text" id="item" name="item" value="Auction Item 1" readonly required />
+            
+            <label for="bidAmount">Bid Amount:</label>
+            <input type="number" id="bidAmount" name="bidAmount" placeholder="Enter your bid" required />
+            
+            <button type="submit">Place Bid</button>
+          </form>
+        </div>
+        <div class="auction-card">
+          <img src="/2.jpg" alt="Auction Item 2">
+          <h3>Auction Item 2</h3>
+          <p>Starting Price: $100</p>
+          <!-- Form to place a bid -->
+          <form id="bidForm2" action="/place-bid" method="POST">
+            <label for="item">Item:</label>
+            <input type="text" id="item2" name="item" value="Auction Item 2" readonly required />
+            
+            <label for="bidAmount">Bid Amount:</label>
+            <input type="number" id="bidAmount2" name="bidAmount" placeholder="Enter your bid" required />
+            
+            <button type="submit">Place Bid</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Auction Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
